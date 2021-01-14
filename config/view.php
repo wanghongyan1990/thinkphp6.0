@@ -22,4 +22,13 @@ return [
     'taglib_begin'  => '{',
     // 标签库标签结束标记
     'taglib_end'    => '}',
+    //模板参数替换
+    'tpl_replace_string' => [
+        '{__BC__}' =>'/static/fsback/bcomponents',
+        '{__FSDIST__}' =>'/static/fsback/fsdist',
+        '{__INDEX__}' =>'/static/index/assets',
+        '{__SEMANTIC__}' =>'/static/1-index/Semantic-UI-CSS-master',
+        '{__EMOJI__}' =>'/static/1-index/emoji',
+
+    ],
 ];
