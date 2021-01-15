@@ -2,9 +2,78 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{__INDEX__}/layui/css/layui.css">
+    <script src="{__INDEX__}/layui/layui.js"></script>
+    <title>欢迎登录</title>
+    <link href="{__INDEX__}/css/default.css" rel="stylesheet" type="text/css" />
+    <!--必要样式-->
+    <link href="{__INDEX__}/css/styles.css" rel="stylesheet" type="text/css" />
+    <link href="{__INDEX__}/css/demo.css" rel="stylesheet" type="text/css" />
+    <link href="{__INDEX__}/css/loaders.css" rel="stylesheet" type="text/css" />
+
+    <script type="text/javascript" src="{__INDEX__}/js/jquery.min.js"></script>
+    <script type="text/javascript" src="{__INDEX__}/js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src='{__INDEX__}/js/stopExecutionOnTimeout.js?t=1'></script>
+    <script type="text/javascript" src="{__INDEX__}/layui/layui.js"></script>
+    <script type="text/javascript" src="{__INDEX__}/js/Particleground.js"></script>
+    <script type="text/javascript" src="{__INDEX__}/Js/Treatment.js"></script>
+    <script type="text/javascript" src="{__INDEX__}/js/jquery.mockjax.js"></script>
+
 </head>
 <body>
-   11
+<div class='login'>
+    <div class='login_title'>
+        <span>欢迎登录</span>
+    </div>
+    <div class='login_fields'>
+        <div class='login_fields__user'>
+            <div class='icon'>
+                <img alt="" src='{__INDEX__}/img/user_icon_copy.png'>
+            </div>
+            <input name="login" placeholder='用户名' maxlength="16" type='text' autocomplete="off" value=""/>
+            <div class='validation'>
+                <img alt="" src='{__INDEX__}/img/tick.png'>
+            </div>
+        </div>
+        <div class='login_fields__password'>
+            <div class='icon'>
+                <img alt="" src='{__INDEX__}/img/lock_icon_copy.png'>
+            </div>
+            <input name="pwd" placeholder='密码' maxlength="16" type='text' autocomplete="off">
+            <div class='validation'>
+                <img alt="" src='{__INDEX__}/img/tick.png'>
+            </div>
+        </div>
+        <div class='login_fields__password'>
+            <div class='icon'>
+                <img alt="" src='{__INDEX__}/img/key.png'>
+            </div>
+            <input name="code" placeholder='验证码' maxlength="4" type='text' name="ValidateNum" autocomplete="off">
+            <div class='validation' style="opacity: 1; right: -5px;top: -3px;">
+                <canvas class="J_codeimg" id="myCanvas" onclick="Code();">对不起，您的浏览器不支持canvas，请下载最新版浏览器!</canvas>
+            </div>
+        </div>
+        <div class='login_fields__submit'>
+            <input type='button' value='登录'>
+        </div>
+    </div>
+    <div class='success'>
+    </div>
+</div>
+
+<div class='authent'>
+    <div class="loader" style="height: 44px;width: 44px;margin-left: 28px;">
+        <div class="loader-inner ball-clip-rotate-multiple">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <p>认证中...</p>
+</div>
+
+<div class="OverWindows"></div>
+<script src="{__INDEX__}/js/index.js"></script>
 </body>
 </html>
