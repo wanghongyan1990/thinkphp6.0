@@ -11,6 +11,7 @@ class Index extends BaseController
 //        $aa = session('name');
 
         //跳转到登陆页面
-        return redirect('/login');
+        return redirect('login');
+
     }
 }

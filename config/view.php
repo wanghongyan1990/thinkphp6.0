@@ -25,9 +25,6 @@ return [
     //模板参数替换
     'tpl_replace_string' => [
         '{__INDEX__}' =>'/static/index/assets',
-        '{__BC__}' =>'/static/fsback/bcomponents',
-        '{__FSDIST__}' =>'/static/fsback/fsdist',
-        '{__SEMANTIC__}' =>'/static/1-index/Semantic-UI-CSS-master',
-        '{__EMOJI__}' =>'/static/1-index/emoji',
+        '{__BACK__}' =>'/static/backend/layuiadmin',
     ],
 ];
