@@ -14,12 +14,13 @@ class common extends BaseController
         $u_name = session('name');
         if (!session('?name'))
         {
-//           echo "<script> window.alert('请登录')</script>";
             return $this->redirectTo(url('/login'));
+            echo "<script> window.alert('请登录')</script>";
             exit;
         }
         else {
-//           echo '登录成功';
+            //echo '登录成功';
+//            echo session_encode();
             //判断用户的权限
         }
     }

@@ -26,5 +26,6 @@ return [
     'tpl_replace_string' => [
         '{__INDEX__}' =>'/static/index/assets',
         '{__BACK__}' =>'/static/backend/layuiadmin',
+        '{__BACKASSETS__}' =>'/static/backend/assets',
     ],
 ];
